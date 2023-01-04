@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    text-transform: capitalize;
+
+}
+
+
+/*--------------reuseable css------------------*/
+.container{
+    width: 90%;
+    /*background: red;*/
+    display: flex;
+}
+.btn{
+    padding: 15px 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Segoe UI';
+    border: none;
+    background: rgb(243, 71, 71);
+    /*font-size: 20px;*/
+    border-radius: 15px;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+
+}
+.btn:hover{
+    background: black;
+    color: rgb(243, 71, 71);
+}
+.section_title{
+    font-size: 40px;
+    font-family: 'PT Serif', serif;
+}
+
+
+
+
+/************main css *******************/
+.header{
+    width: 100%;
+    height: 120px;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    color: white;
+}
+.header_container{
+    justify-content: space-between;
+}
+.logo{
+    width: 15%;
+    height: 120px;
+    /*background: yellow;*/
+    font-size: 30px;
+    text-align: center;
+    line-height: 120px;
+    font-weight: bold;
+    color: rgb(243, 71, 71);
+    font-family: 'Lobster', cursive;
+}
+.nav{
+    width: 35%;
+    height: 120px;
+    line-height: 120px;
+    /*background: blue;*/
+
+}
+.nav>ul{
+    display: flex;
+    height: 100%;
+}
+.nav>ul>li{
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    font-size: 16px;
+    transition: 0.3s;
+}
+.nav>ul>li:hover{
+    transform: scale(1.1);
+    color: rgb(243, 71, 71);
+    cursor: pointer;
+}
+.banner{
+    width: 100%;
+    height: 95vh;
+    background: black;
+    background-image: url(https://images.pexels.com/photos/32237/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size: cover;
+    background-position: -300px -200px;
+    display: flex;
+    align-items: center;
+}
+.banner_details{
+    width: 40%;
+    height: 400px;
+    /*background:rgba(0, 0, 0, 0.3);*/
+    background: rgb(255, 255, 255,0.2);
+    margin-top: 2%;
+    margin-left: 50%;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.padd{
+    padding: 20px;
+}
+.banner_details h1{
+    font-size: 40px;
+    font-family: 'PT Serif', serif;
+}
+.banner_details p{
+    padding-top: 5px;
+    font-weight: bold;
+    font-family: 'PT Serif', serif;
+    margin-bottom: 20px;
+}
+
+
+
+/******************css for service***********************/
+.services{
+    padding: 50px 0;
+    width: 100%;
+    background: rgb(240, 233, 233);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.services_container{
+    margin-top: 30px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.service{
+    width: 18%;
+    height : 350px;
+    /*background: red;*/
+    margin-top: 20px;
+    /*margin-left: calc(12%/5);*/
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    cursor: pointer;
+}
+.service_name{
+    width: 100%;
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    font-family: 'PT Serif', serif;
+    transition: 0.5s;
+}
+.service:hover >.service_name{
+    height: 100%;
+}
+
+
+.service:nth-child(1){
+    background-image: url(https://images.pexels.com/photos/2387871/pexels-photo-2387871.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+}
+.service:nth-child(2){
+    background-image: url(https://images.pexels.com/photos/994605/pexels-photo-994605.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+}
+.service:nth-child(3){
+    background-image: url(https://i2.wp.com/thefoodiediaries.co/wp-content/uploads/2017/04/img_7260.jpg?fit=660%2C660&ssl=1);
+}
+.service:nth-child(4){
+    background-image:url(https://englishtribuneimages.blob.core.windows.net/gallary-content/2021/2/Desk/2021_2$largeimg_512456708.jpeg)
+}
+.service:nth-child(5){
+    background-image: url(https://images.thrillophilia.com/image/upload/s--2Cu3wIBK--/c_fill,g_auto,h_600,q_auto,w_975/f_auto,fl_strip_profile/v1/images/photos/000/013/739/original/5044002628_ef7f8b27af_b.jpg.jpg);
+}
+.service:nth-child(6){
+    background-image: url(https://www.keralahouseboat.in/images/kb.jpg);
+}
+.service:nth-child(7){
+    background-image: url(https://images.pexels.com/photos/2870167/pexels-photo-2870167.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+}
+.service:nth-child(8){
+    background-image: url(https://www.namasteui.com/wp-content/uploads/2020/04/leh-ladakh-trip.jpg);
+}
+.service:nth-child(9){
+    background-image: url(https://i.pinimg.com/originals/12/4c/00/124c0036fe0ee0ec039ca1f427fbc3fa.jpg);
+}
+.service:nth-child(10){
+    background-image: url(https://dynamic.tourtravelworld.com/package-images/photo-big/dir_10/290674/122962.jpg);
+}
+.service:nth-child(11){
+    background-image: url(https://lp-cms-production.imgix.net/features/2017/07/GettyImages-552552051_1-622aee008bea.jpg?auto=format&fit=crop&sharp=10&vib=20&ixlib=react-8.6.4&w=850);
+}
+.service:nth-child(12){
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/3/32/Chennai_Central.jpg);
+}
+.service:nth-child(13){
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTkTfzdI9zeczk7dSaenqFXe3hpLrYOe90EQ&usqp=CAU);
+}
+.service:nth-child(14){
+    background-image: url(https://th.bing.com/th/id/R.d2c778e4f07b708d754128f414da4012?rik=faiMc8IUCJTP1w&riu=http%3a%2f%2fwww.beautifulglobal.com%2fwp-content%2fuploads%2f2015%2f05%2fCharminar-Monument-And-Mosque-Hyderabad-Telangana-India-1.jpg&ehk=2zygUobWAJMuuTQ%2b9b5u2u%2bgt31PZaKWz1oblo%2fxkb4%3d&risl=&pid=ImgRaw&r=0);
+}
+
+
+
+
+/*********************css for packages******************/
+.packages{
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgb(192, 184, 184);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.packages_container{
+    margin-top: 30px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.package{
+    width: 18%;
+    height : 350px;
+    background: white;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+.pack_title{
+    font-size: 30px;
+    font-family: 'PT Serif', serif;
+    margin-bottom: 15px;
+
+}
+.pack_desc{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+.pack_duration{
+    font-family: 'PT Serif', serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.pack_price{
+    font-family: 'PT Serif', serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.pack_btn{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 15px;
+    width: 100%;
+}
+
+
+/**************************css for sample pictures*********************/
+.samples{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.sample{
+    width: 20%;
+    height: 400px;
+    /*background-color: red;*/
+    background-size: cover;
+    cursor: pointer;
+    background-position: center;
+}
+.sample_overlay{
+    width: 100%;
+    height: 400px;
+    background-color: rgb(0,0,0,0.4);
+    transition: 0.4s;
+}
+.sample_overlay:hover{
+    background-color: rgb(0,0,0,0);
+}
+
+.sample:nth-child(1){
+    background-image: url(https://images.pexels.com/photos/1374064/pexels-photo-1374064.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+}
+.sample:nth-child(2){
+    background-image: url(https://images.pexels.com/photos/1486974/pexels-photo-1486974.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+}
+.sample:nth-child(3){
+    background-image: url(https://images.pexels.com/photos/848573/pexels-photo-848573.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+}
+.sample:nth-child(4){
+    background-image: url(https://images.pexels.com/photos/4553022/pexels-photo-4553022.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+}
+.sample:nth-child(5){
+    background-image: url(https://images.pexels.com/photos/3932713/pexels-photo-3932713.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+}
+.sample:nth-child(6){
+    background-image: url(https://images.pexels.com/photos/2827374/pexels-photo-2827374.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+}
+.sample:nth-child(7){
+    background-image: url(https://images.pexels.com/photos/6637370/pexels-photo-6637370.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+}
+.sample:nth-child(8){
+    background-image: url(https://images.pexels.com/photos/6118897/pexels-photo-6118897.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+}
+.sample:nth-child(9){
+    background-image: url(https://images.pexels.com/photos/4946986/pexels-photo-4946986.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+}
+.sample:nth-child(10){
+    background-image: url(https://images.pexels.com/photos/2412606/pexels-photo-2412606.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+}
+
+
+/*********************about us*********************/
+.about{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(192, 184, 184);
+}
+.about_container{
+    margin-top: 30px;
+    line-height: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: inline;
+
+}
+.highlight{
+    font-family: 'PT Serif', serif;
+    font-size: 30px;
+}
+
+
+
+/************************css for footer*********************/
+
+.footer{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgb(68, 66, 66);
+    display: flex;
+    justify-content: center;
+}
+.footer_container{
+    justify-content: space-between;
+}
+.footer_child{
+    width: 30%;
+    height: 300px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.footer_child:nth-child(1){
+    font-size: 50px;
+    text-align: center;
+    line-height: 300px;
+    font-weight: bold;
+    color: rgb(243, 71, 71);
+    font-family: 'Lobster', cursive;
+    
+}
+.footer_child:nth-child(2) p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer_child:nth-child(3){
+
+}
+.copyright{
+    text-align: center;
+    font-size: 20px;
+}
+.fa.fa-facebook-square,.fa.fa-twitter,.fa.fa-instagram,.fa.fa-youtube-square{
+    font-size: 35px;
+    transition: 0.3s;
+}
+.fa.fa-facebook-square:hover{
+    color: rgb(243, 71, 71);
+    transform: scale(1.2);
+}
+.fa.fa-twitter:hover{
+    color: rgb(243, 71, 71);
+    transform: scale(1.2);
+}
+.fa.fa-instagram:hover{
+    color: rgb(243, 71, 71);
+    transform: scale(1.2);
+}
+.fa.fa-youtube-square:hover{
+    color: rgb(243, 71, 71);
+    transform: scale(1.2);
+}
+}
